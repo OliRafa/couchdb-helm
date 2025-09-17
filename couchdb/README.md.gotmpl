@@ -1,4 +1,3 @@
-# CouchDB
 
 {{ template "chart.versionBadge" . }}{{ template "chart.typeBadge" . }}{{ template "chart.appVersionBadge" . }}
 
@@ -178,6 +177,7 @@ A variety of other parameters are also configurable. See the comments in the
 | `ingress.tls`                        |                                                                                                                                                              |
 | `persistentVolume.accessModes`       | ReadWriteOnce                                                                                                                                                |
 | `persistentVolume.storageClass`      | Default for the Kube cluster                                                                                                                                 |
+| `persistentVolume.selfManaged`       | Set selfManaged to true if you want to provide the chart with existing PVCs created outside of the scope of this helm chart.
 | `persistentVolume.annotations`       | {}                                                                                                                                                           |
 | `podDisruptionBudget.enabled`        | false                                                                                                                                                        |
 | `podDisruptionBudget.minAvailable`   | nil                                                                                                                                                          |
